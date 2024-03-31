@@ -1,5 +1,5 @@
 # Ex03 Time Table
-## Date:
+## Date: 26.3.2024
 
 ## AIM
 To write a html webpage page to display your slot timetable.
@@ -25,8 +25,40 @@ Execute the program using runserver command.
 
 ## PROGRAM
 
+Name: Niranjana devi s
+
+Reg No: 212221220036
+
+## Models.py
+
+~~~
+from django.db import models
+from django.contrib import admin
+class Player(models.Model):
+    Player_Name=models.CharField(max_length=50)
+    Jersy_No=models.IntegerField()
+    Team=models.CharField(max_length=20)
+    Height=models.IntegerField()
+    Position=models.CharField(max_length=100)
+
+class Player_Admin(admin.ModelAdmin):
+    list_display=('Player_Name','Jersy_No','Team','Height','Position')
+~~~
+
+## admi.py
+
+~~~
+from django.contrib import admin
+from .models import Player,Player_Admin
+admin.site.register(Player,Player_Admin)
+~~~
 
 ## OUTPUT
+
+![image](https://github.com/niranjanadevi-s/slot/assets/141748873/e6306a0e-4656-42fd-94d9-c0040de2d658)
+
+![image](https://github.com/niranjanadevi-s/slot/assets/141748873/6e092d5e-9fc5-4cfe-a684-565288db84ec)
+
 
 
 ## RESULT
