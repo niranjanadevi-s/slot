@@ -1,11 +1,10 @@
-~~~
- Ex03 Time Table
- Date: 26.3.2024
+## Ex03 Time Table
+## Date: 26.3.2024
 
- AIM
+## AIM
  To write a html webpage page to display your slot timetable.
 
- ALGORITHM
+## ALGORITHM
 
  STEP 1: Create a Django-admin Interface.
  STEP 2: Create a static folder and inert HTML code.
@@ -14,10 +13,10 @@
  STEP 5: Add your timetable using ```<td>``` tag.
  STEP 6: Execute the program using runserver command.
 
-PROGRAM
+## PROGRAM
 
-Models.py
-
+# Models.py
+~~~
 from django.db import models
 from django.contrib import admin
 class Player(models.Model):
@@ -29,9 +28,9 @@ class Player(models.Model):
 
 class Player_Admin(admin.ModelAdmin):
     list_display=('Player_Name','Jersy_No','Team','Height','Position')
-
-admi.py
-
+~~~
+# admi.py
+~~~
 from django.contrib import admin
 from .models import Player,Player_Admin
 admin.site.register(Player,Player_Admin)
