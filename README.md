@@ -6,13 +6,16 @@
  To write a html webpage page to display your slot timetable.
 
  ALGORITHM
+
  STEP 1: Create a Django-admin Interface.
  STEP 2: Create a static folder and inert HTML code.
  STEP 3: Create a simple table using ```<table>``` tag in html.
  STEP 4: Add header row using ```<th>``` tag.
  STEP 5: Add your timetable using ```<td>``` tag.
  STEP 6: Execute the program using runserver command.
- PROGRAM
+
+PROGRAM
+
 Models.py
 
 from django.db import models
@@ -36,6 +39,7 @@ admin.site.register(Player,Player_Admin)
 ## OUTPUT
 
 ![image](https://github.com/niranjanadevi-s/slot/assets/141748873/e6306a0e-4656-42fd-94d9-c0040de2d658)
+
 
 ![image](https://github.com/niranjanadevi-s/slot/assets/141748873/6e092d5e-9fc5-4cfe-a684-565288db84ec)
 
