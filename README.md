@@ -28,7 +28,9 @@ class Player(models.Model):
     Position=models.CharField(max_length=100)
 class Player_Admin(admin.ModelAdmin):
     list_display=('Player_Name','Jersy_No','Team','Height','Position')
+~~~
 # admi.py
+~~~
 from django.contrib import admin
 from .models import Player,Player_Admin
 admin.site.register(Player,Player_Admin)
